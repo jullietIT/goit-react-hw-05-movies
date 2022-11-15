@@ -1,0 +1,62 @@
+.Container {
+  max-width: 1280px;
+  margin: 0 auto;
+  align-items: center;
+}
+.Nav {
+  background-color: #ffffff;
+  display: flex;
+  gap: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  align-items: baseline;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 46px;
+  line-height: 1.14;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  border-bottom: #656363 solid 2px;
+  box-shadow: 0 4px 2px -2px rgb(255, 252, 252);
+}
+
+.titleLink {
+  font-family: Teko;
+  font-weight: 0;
+  font-size: 32px;
+  color: #151413;
+  padding-top: 22px 32px;
+  margin: 15px 39px;
+  border: none;
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+  border-radius: 22px 50px;
+  transition: 327ms;
+  transform: translateY(0);
+  width: 55px;
+}
+
+.titleLink {
+  font-family: Teko;
+  font-weight: 0;
+  font-size: 32px;
+  color: #151413;
+  padding: 20px 47px;
+  border-radius: 22px 50px;
+  transition: 227ms;
+  transform: translateY(0);
+  width: 55px;
+  margin: 15px 0;
+}
+
+.titleLink:hover,
+.titleLink:focus {
+  transition: 327ms;
+  padding: 10px 50px;
+  transform: translateY(-0px);
+  color: #f99019;
+}
+
+/* не работает */
+/* .active {
+  color: #f99019;
+  composes: link;
+} */

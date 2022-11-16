@@ -4,6 +4,7 @@ import { Suspense, useEffect, useState } from 'react';
 import { Outlet, useLocation, useParams } from 'react-router-dom';
 import s from './MoviesInfo.module.css';
 import PropTypes from 'prop-types';
+import { BsCaretLeftSquareFill } from 'react-icons/bs';
 
 const MovieInfo = () => {
   const [movie, setMovie] = useState([]);
@@ -23,9 +24,10 @@ const MovieInfo = () => {
   }, [id]);
 
   return (
-    <div>
-      <NavLink className={s.GoBackLink} to={goBackLink}>
-        Go back
+    <div className={s.wrapper}>
+      <NavLink className={s.goBackLink} to={goBackLink}>
+        <BsCaretLeftSquareFill size="24px" />
+        GO BACK
       </NavLink>
       <div className={s.wrap}>
         <div className={s.poster}>
@@ -43,7 +45,7 @@ const MovieInfo = () => {
             </div>
             <div className={s.item}>
               <h3>Budget: </h3>
-              {movie.budget}$
+              {movie.budget}
             </div>
             <div className={s.item}>
               <h3>Vote average : </h3>

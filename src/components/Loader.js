@@ -4,7 +4,7 @@ import FadeLoader from 'react-spinners/FadeLoader';
 export const Loader = ({ boolean }) => {
   return (
     <FadeLoader
-      color="#36d7b7"
+      color="#f99019"
       loading={boolean}
       height="13"
       width="6"
@@ -19,5 +19,5 @@ export const Loader = ({ boolean }) => {
 };
 
 Loader.propTypes = {
-  isLoading: PropTypes.bool,
+  isLoading: PropTypes.bool.isRequired,
 };

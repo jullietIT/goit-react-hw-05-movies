@@ -27,11 +27,11 @@
 }
 
 .titleLink {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: Teko;
   font-weight: 0;
   font-size: 32px;
   color: #151413;
-  padding-top: 22px 32px;
+  padding: 20px 47px;
   margin: 15px 39px;
   border: none;
   box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
@@ -39,19 +39,6 @@
   transition: 327ms;
   transform: translateY(0);
   width: 55px;
-}
-
-.titleLink {
-  font-family: Teko;
-  font-weight: 0;
-  font-size: 32px;
-  color: #151413;
-  padding: 20px 47px;
-  border-radius: 22px 50px;
-  transition: 227ms;
-  transform: translateY(0);
-  width: 55px;
-  margin: 15px 0;
 }
 
 .titleLink:hover,

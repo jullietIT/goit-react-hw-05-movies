@@ -41,7 +41,6 @@ export function SearchMovies({ onSubmit }) {
         />
         <button type="submit" className={s.button}>
           <ImSearch size="24" />
-          {/* Search */}
         </button>
       </form>
     </div>

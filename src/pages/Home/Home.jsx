@@ -20,13 +20,12 @@ export const Home = () => {
 
   return (
     <main className={s.main}>
-      <p className={s.title}>Trending today</p>
+      <p className={s.title}>TRENDING TODAY</p>
       <ul className={s.list}>
         {trendingMovies.map(({ id, title, poster_path, vote_average }) => (
           <li className={s.item} key={id}>
             <NavLink className={s.NavLink} to={`/movies/${id}`}>
               <div className={s.wrap}>
-                {' '}
                 <img
                   className={s.img}
                   alt={title}
@@ -34,7 +33,6 @@ export const Home = () => {
                 />
               </div>
               <div>
-                {' '}
                 <h3 className={s.titleName}>{title}</h3>
               </div>
             </NavLink>

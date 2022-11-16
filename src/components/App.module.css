@@ -1,9 +1,16 @@
-.Container {
+.container {
   max-width: 1280px;
   margin: 0 auto;
   align-items: center;
 }
-.Nav {
+
+.header {
+  padding: 3px;
+  margin-bottom: 4px;
+  box-shadow: 1px 2px 9px 0px rgb(0 0 0 / 55%);
+}
+
+.nav {
   background-color: #ffffff;
   display: flex;
   gap: 15px;
@@ -15,12 +22,12 @@
   line-height: 1.14;
   font-weight: 500;
   letter-spacing: 0.02em;
-  border-bottom: #656363 solid 2px;
+
   box-shadow: 0 4px 2px -2px rgb(255, 252, 252);
 }
 
 .titleLink {
-  font-family: Teko;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: 0;
   font-size: 32px;
   color: #151413;

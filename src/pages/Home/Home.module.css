@@ -1,7 +1,7 @@
-.HomeMain {
+.main {
   background-color: #ffffff;
 }
-.HomeTitle {
+.title {
   text-align: center;
   font-size: 36px;
   font-weight: 500;
@@ -12,7 +12,7 @@
   margin: 10px, 0;
 }
 
-.HomeList {
+.list {
   list-style: none;
   display: grid;
   justify-content: center;
@@ -27,12 +27,12 @@
   max-width: 1200px;
 }
 
-.HomeNavLink {
+.NavLink {
   color: #000000;
   width: 300px;
 }
 
-.Homeli {
+.item {
   display: flex;
   flex-direction: column;
   border-radius: 6px;
@@ -53,9 +53,9 @@
   padding: 10px 5px;
 }
 
-.Title {
+.titleName {
   text-align: center;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
   line-height: 14px;
   letter-spacing: 0.04em;

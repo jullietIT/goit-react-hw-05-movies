@@ -1,10 +1,8 @@
-// import { Wrapper, Input, Icon } from './SearchBox.styled.js';
-
 import { useState } from 'react';
 import { toast } from 'react-toastify';
 import PropTypes from 'prop-types';
 import s from './Searchbar.module.css';
-import { fcsearch } from 'react-icons/fc';
+import { ImSearch } from 'react-icons/im';
 import React from 'react';
 
 export function SearchMovies({ onSubmit }) {
@@ -27,23 +25,23 @@ export function SearchMovies({ onSubmit }) {
     setSearchText('');
   };
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
+    <div className={s.wrap}>
+      <form className={s.searchForm} onSubmit={handleSubmit}>
         <input
           onChange={handleSetQuery}
           value={searchText}
           name="query"
-          className={s.SearchFormInput}
+          className={s.searcInput}
           type="text"
           autoComplete="off"
           autoFocus
-          placeholder="Що шукаємо ?"
+          placeholder="search movies ..."
           pattern="^[0-9a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
           title="Щоб щось знайти, введіть пошукове слово, що складається з букв,апострофа,тире, цифр и пробілу."
         />
         <button type="submit" className={s.button}>
-          <fcsearch />
-          Search
+          <ImSearch size="24" />
+          {/* Search */}
         </button>
       </form>
     </div>

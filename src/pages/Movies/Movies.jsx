@@ -1,5 +1,5 @@
 import { getSearchMovies } from '../../ApiServis';
-import MovieList from '../../components/Endpoint/MoviesID/MoviesList';
+import MovieList from '../../components/Endpoint/MoviesList/MoviesList';
 import { useState } from 'react';
 import { Outlet } from 'react-router-dom';
 import { SearchMovies } from '../../components/Endpoint/SearchMovies/SearchMovies';

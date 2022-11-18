@@ -1,17 +1,17 @@
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import s from './Home.module.css';
 import PropTypes from 'prop-types';
 
 const { getTrendigs } = require('ApiServis');
 const { useState, useEffect } = require('react');
+const homePicture = {
+  base_url: 'https://image.tmdb.org/t/p/',
+  size: 'w300',
+};
 
 export const Home = () => {
   const [trendingMovies, setTrendingMovies] = useState([]);
 
-  const homePicture = {
-    base_url: 'https://image.tmdb.org/t/p/',
-    size: 'w300',
-  };
   useEffect(() => {
     getTrendigs().then(response => {
       setTrendingMovies(response.results);
@@ -24,7 +24,7 @@ export const Home = () => {
       <ul className={s.list}>
         {trendingMovies.map(({ id, title, poster_path, vote_average }) => (
           <li className={s.item} key={id}>
-            <NavLink className={s.NavLink} to={`/movies/${id}`}>
+            <Link className={s.NavLink} to={`/movies/${id}`}>
               <div className={s.wrap}>
                 <img
                   className={s.img}
@@ -35,7 +35,7 @@ export const Home = () => {
               <div>
                 <h3 className={s.titleName}>{title}</h3>
               </div>
-            </NavLink>
+            </Link>
           </li>
         ))}
       </ul>

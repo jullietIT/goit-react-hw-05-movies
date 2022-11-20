@@ -23,6 +23,7 @@ export const MovieList = ({ movies }) => {
           return (
             <li className={s.item} key={id}>
               <Link to={`/movies/${id}`} state={{ from: location }}>
+                {/* Завдяки state={{ from: location }}>  ми переходимо на ту сторінку  з якої прийшли*/}
                 <div>
                   <img className={s.img} alt={title} src={poster} />
                 </div>

@@ -1,13 +1,14 @@
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import s from './Home.module.css';
 import PropTypes from 'prop-types';
+import MovieList from '../../components/Endpoint/MoviesList/MoviesList';
 
 const { getTrendigs } = require('ApiServis');
 const { useState, useEffect } = require('react');
-const homePicture = {
-  base_url: 'https://image.tmdb.org/t/p/',
-  size: 'w300',
-};
+// const homePicture = {
+//   base_url: 'https://image.tmdb.org/t/p/',
+//   size: 'w300',
+// };
 
 export const Home = () => {
   const [trendingMovies, setTrendingMovies] = useState([]);
@@ -21,7 +22,9 @@ export const Home = () => {
   return (
     <main className={s.main}>
       <p className={s.title}>TRENDING TODAY</p>
-      <ul className={s.list}>
+      {/* <MovieList movies={trendingMovies} />    Стандартний патерн !!trendingMovies.length &&   якщо є фільми, то ми їх рендеримо*/}
+      {!!trendingMovies.length && <MovieList movies={trendingMovies} />}
+      {/* <ul className={s.list}>
         {trendingMovies.map(({ id, title, poster_path, vote_average }) => (
           <li className={s.item} key={id}>
             <Link className={s.NavLink} to={`/movies/${id}`}>
@@ -38,7 +41,7 @@ export const Home = () => {
             </Link>
           </li>
         ))}
-      </ul>
+      </ul> */}
     </main>
   );
 };

@@ -30,7 +30,7 @@ const MovieInfo = () => {
     <div className={s.wrapper}>
       <Link className={s.goBackLink} to={goBackLink}>
         {/* <Link className={s.goBackLink} onClick={goBackLink}> */}
-        <BsCaretLeftSquareFill size="24px" />
+        <BsCaretLeftSquareFill size="24px" className={s.goBackIcon} />
         GO BACK
       </Link>
       {MovieInfo && (

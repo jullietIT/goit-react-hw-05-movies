@@ -6,7 +6,7 @@
   font-weight: 0;
   font-size: 18px;
   color: #151413;
-  padding: 20px 47px;
+  padding: 11px 5px;
   cursor: pointer;
   border-radius: 22px 50px;
   border: 2px solid rgb(100, 98, 98);
@@ -18,6 +18,10 @@
 .goBackLink:focus {
   color: #f99019;
   background-color: #ffffff;
+}
+.goBackIcon {
+  margin: -6px 12px;
+  color: #151413;
 }
 .wrap {
   display: flex;

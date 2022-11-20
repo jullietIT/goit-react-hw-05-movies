@@ -1,6 +1,6 @@
 import { Suspense } from 'react';
 import { Outlet } from 'react-router-dom';
-import { Loader } from './Loader';
+import { Loader } from '../components/Loader/Loader';
 
 import { NavLink } from 'react-router-dom';
 import s from './App.module.css';

@@ -1,7 +1,7 @@
 // import { Link } from 'react-router-dom';
 import s from './Home.module.css';
 import PropTypes from 'prop-types';
-import MovieList from '../../components/Endpoint/MoviesList/MoviesList';
+import MovieList from '../../components/MoviesList/MoviesList';
 
 const { getTrendigs } = require('ApiServis');
 const { useState, useEffect } = require('react');

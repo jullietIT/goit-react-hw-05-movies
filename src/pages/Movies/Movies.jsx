@@ -1,8 +1,8 @@
 import { getSearchMovies } from '../../ApiServis';
-import MovieList from '../../components/Endpoint/MoviesList/MoviesList';
+import MovieList from '../../components/MoviesList/MoviesList';
 import { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { SearchMovies } from '../../components/Endpoint/SearchMovies/SearchMovies';
+import { SearchMovies } from '../../components/SearchMovies/SearchMovies';
 
 export const Movies = () => {
   const [movies, setMovies] = useState([]);

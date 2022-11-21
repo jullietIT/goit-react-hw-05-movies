@@ -1,4 +1,4 @@
-import Details from '../../components/Endpoint/MoviesInfo/MoviesInfo';
+import Details from '../../components/MoviesInfo/MoviesInfo';
 
 const MoviesDetails = () => {
   return (
